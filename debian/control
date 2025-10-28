@@ -1,0 +1,12 @@
+Source: ros-humble-pal-sea-arm-description
+Section: misc
+Priority: optional
+Maintainer: Narcis Miguel <narcis.miguel@pal-robotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake-auto, ros-humble-ament-cmake-pytest <!nocheck>, ros-humble-ament-cmake-python, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-launch-testing-ament-cmake <!nocheck>, ros-humble-urdf-test <!nocheck>, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-pal-sea-arm-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-joint-state-publisher-gui, ros-humble-launch, ros-humble-launch-pal, ros-humble-launch-param-builder, ros-humble-launch-ros, ros-humble-pal-pro-gripper-description, ros-humble-pal-sea-arm-controller-configuration, ros-humble-pal-urdf-utils, ros-humble-robot-state-publisher, ros-humble-xacro, ros-humble-ros-workspace
+Description: The pal_sea_arm_description package
