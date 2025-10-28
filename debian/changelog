@@ -1,0 +1,422 @@
+ros-humble-pal-sea-arm-controller-configuration (1.20.1-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 27 Oct 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.20.0-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 23 Oct 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.19.1-1jammy) jammy; urgency=high
+
+  * Merge branch 'fix/condition_private_packages' into 'humble-devel'
+    Add PAL_DISTRO condition for non-public packages
+    See merge request robots/pal_sea_arm!94
+  * Add PAL_DISTRO condition for non-public packages
+  * Merge branch 'fix/tolerance_fix' into 'humble-devel'
+    tmp fix removing tolerance
+    See merge request robots/pal_sea_arm!81
+  * Remove tolerance
+  * Contributors: Aina, Noel Jimenez, ileniaperrella
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 13 Oct 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.19.0-1jammy) jammy; urgency=high
+
+  * Fixed arm controller configuration file
+  * restored to original version
+  * Fixed arm_prefix in sea_state_broadcaster
+  * changed mujoco simulation update_rate argument
+  * Added mujoco_controller_manager config file
+  * Added mujoco tags
+  * Contributors: Ortisa Poci
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 08 Sep 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.7-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 01 Aug 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.6-1jammy) jammy; urgency=high
+
+  * Increasing sea_state_broadcaster frequency
+  * Contributors: oscarmartinez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 29 Jul 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.5-1jammy) jammy; urgency=high
+
+  * Remove trajectory constraint
+  * Contributors: Aina Irisarri
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 28 Jul 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.4-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 28 Jul 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.3-1jammy) jammy; urgency=high
+
+  * Merge branch 'ipe/fix/open-loop' into 'humble-devel'
+    add open_loop to arm controller
+    See merge request robots/pal_sea_arm!84
+  * add open_loop to arm controller
+  * Contributors: Sai Kishor Kothakota, ileniaperrella
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 23 Jul 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.2-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 17 Jun 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.1-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 06 Jun 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.18.0-1jammy) jammy; urgency=high
+
+  * Default controller launch and missing dep
+  * Adding sea_state_broadcaster as a side controller
+  * Contributors: oscarmartinez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 29 May 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.17.5-1jammy) jammy; urgency=high
+
+  * increase trajectory tolerance to ~10deg
+  * update arm_controller with trajectory constraint
+  * Contributors: ileniaperrella
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 28 May 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.17.4-1jammy) jammy; urgency=high
+
+  * Fixing the parsing order for master calibration
+  * Contributors: oscarmartinez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 29 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.17.3-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 28 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.17.2-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 17 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.17.1-1jammy) jammy; urgency=high
+
+  * Renaming current of effort and proper launch mechanism
+  * Contributors: oscarmartinez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 11 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.17.0-1jammy) jammy; urgency=high
+
+  * Adding config and launching mechanism for GC in torque
+  * Add intertia shaping dependency
+  * Config files based on actuator type
+  * Added launcher and config files for IS
+  * Contributors: davidterkuile, oscarmartinez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 10 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.16.0-1jammy) jammy; urgency=high
+
+  * Using parameter from Common Args
+  * Adapting to new gravity behaviour
+  * Contributors: oscarmartinez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 09 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.15.3-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 09 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.15.2-1jammy) jammy; urgency=high
+
+  * Create gravity compensation controller
+  * Update launch args of arm_controller.launch.py
+  * Contributors: David ter Kuile
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 03 Apr 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.15.1-1jammy) jammy; urgency=high
+
+  * Remove choices for ft-sensor side for triago compatibility
+  * Contributors: David ter Kuile
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 31 Mar 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.15.0-1jammy) jammy; urgency=high
+
+  * Support in pal_sea_arm_bringup
+  * Support in pal_sea_arm_controller_configuration
+  * SEA transmission optional loading
+  * added joint torque state broadcaster
+  * Contributors: Daniel Costanzi, oscarmartinez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 27 Mar 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.14.5-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 28 Feb 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.14.4-1jammy) jammy; urgency=high
+
+  * Merge branch 'tpe/fix_ft_sensor' into 'humble-devel'
+    Fix ATI sensor in gazebo simulation
+    See merge request robots/pal_sea_arm!62
+  * Fix ATI sensor in gazebo simulation
+  * Contributors: thomas.peyrucain, thomaspeyrucain
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 19 Feb 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.14.3-1jammy) jammy; urgency=high
+
+  * Use ft_sensor suffix for force-torque sensor name
+  * Contributors: Noel Jimenez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 05 Feb 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.14.2-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 23 Jan 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.14.1-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 21 Jan 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.14.0-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 16 Jan 2025 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.13.0-1jammy) jammy; urgency=high
+
+  * Set update_rate for joint_state_broadcaster
+  * Contributors: Noel Jimenez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 07 Nov 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.12.0-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 29 Oct 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.11.6-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 21 Oct 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.11.5-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 09 Oct 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.11.4-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 08 Oct 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.11.3-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 02 Oct 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.11.2-1jammy) jammy; urgency=high
+
+  * Merge branch 'vmo/ati_controller' into 'humble-devel'
+    Adding ati controller
+    See merge request robots/pal_sea_arm!43
+  * Adding ati controller
+  * Contributors: thomaspeyrucain, vivianamorlando
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 30 Sep 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.11.1-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 27 Sep 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.11.0-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 19 Sep 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.10.1-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 09 Sep 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.10.0-1jammy) jammy; urgency=high
+
+  * Use controller_type from the controllers config
+  * Contributors: Noel Jimenez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 06 Aug 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.9-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 11 Jul 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.8-1jammy) jammy; urgency=high
+
+  * Add warning for pal_module_cmake not found
+  * add modules for description and controller*
+  * Contributors: Aina, Noel Jimenez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 09 Jul 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.7-1jammy) jammy; urgency=high
+
+  * Merge branch 'dtk/move-robot-args' into 'humble-devel'
+    Change import for launch args
+    See merge request robots/pal_sea_arm!30
+  * Create standalone robot args for sea arms
+  * Contributors: David ter Kuile, davidterkuile
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 26 Jun 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.6-1jammy) jammy; urgency=high
+
+  * Merge branch 'feat/auto-generated_srdf_files' into 'humble-devel'
+    add no-end-effector condition in controllers
+    See merge request robots/pal_sea_arm!26
+  * linters
+  * add no-end-effector condition in controllers
+  * Contributors: Aina Irisarri, davidterkuile
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Wed, 22 May 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.5-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 09 May 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.4-1jammy) jammy; urgency=high
+
+  * 1.0.3
+  * Update Changelog
+  * Update copyright year
+  * Remove unused imports for flake test
+  * Refactor arm_controller
+  * Remove unused default_safety_parameters
+  * Create force-torque sensor related launch file
+  * Restructure launch files
+  * Contributors: David ter Kuile, Noel Jimenez
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 26 Apr 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.3-1jammy) jammy; urgency=high
+
+  * Merge branch 'dtk/fix/restructure' into 'humble-devel'
+    Dtk/fix/restructure
+    See merge request robots/pal_sea_arm!23
+  * Update copyright year
+  * Remove unused imports for flake test
+  * Refactor arm_controller
+  * Remove unused default_safety_parameters
+  * Create force-torque sensor related launch file
+  * Restructure launch files
+  * Contributors: David ter Kuile, Noel Jimenez, davidterkuile
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 22 Mar 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.2-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Thu, 07 Mar 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.1-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 29 Jan 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (1.0.0-1jammy) jammy; urgency=high
+
+  * Merge branch 'ros2-migration' into 'humble-devel'
+    Ros2 migration
+    See merge request robots/pal_sea_arm!17
+  * remove unused type param from controller config files
+  * update to 3.8 the cmake_minimum_required Version
+  * clean default controller + playmotion2 added
+  * update launch files
+  * update motions files
+  * default controllers added
+  * controller_configuration configs file
+  * add more dependencies to pal_sea_arm_controller_configuration
+  * migration of pal_sea_arm_description folder
+  * migration of CMakeLists.txt and package.xml to ros2
+  * Contributors: Adria Roig, ileniaperrella
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 29 Jan 2024 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (0.1.3-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 27 Oct 2023 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (0.1.2-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Tue, 24 Oct 2023 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (0.1.1-1jammy) jammy; urgency=high
+
+
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Mon, 23 Oct 2023 00:00:00 -0000
+
+ros-humble-pal-sea-arm-controller-configuration (0.1.0-1jammy) jammy; urgency=high
+
+  * Merge branch 'new_name' into 'master'
+    Change tiago_pro_arm ro pal_sea_arm and combine both urdf
+    See merge request robots/pal_sea_arm!9
+  * Changes after removing pal_sea_arm_controller_configuration_gazebo
+  * Address comments + fix colors
+  * Change tiago_pro_arm ro pal_sea_arm and combine both urdf
+  * Contributors: Jordan Palacios, thomaspeyrucain
+
+ -- Thomas Peyrucain <thomas.peyrucain@pal-robotics.com>  Fri, 20 Oct 2023 00:00:00 -0000
+
+
