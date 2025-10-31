@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import os
 from pathlib import Path
 
 from ament_index_python.packages import get_package_share_directory
@@ -28,8 +29,7 @@ xacro_file_path = Path(
 
 arm_args = (
     SEAArmArgs.tool_changer,
-    SEAArmArgs.ft_sensor,
-    SEAArmArgs.end_effector
+    SEAArmArgs.ft_sensor
 )
 
 arm_standalone = DeclareLaunchArgument(
@@ -52,6 +52,14 @@ straigh_wrist = DeclareLaunchArgument(
     name='straigh-wrist',
     choices=['straigh-wrist'])
 
+end_effector = SEAArmArgs.end_effector
+if not os.environ.get('PAL_DISTRO'):
+    _orig = SEAArmArgs.end_effector
+    _choices = getattr(_orig, 'choices', None)
+    _name = getattr(_orig, 'name', None)
+    filtered_choices = [c for c in _choices if 'allegro-hand' not in str(c)]
+    end_effector = DeclareLaunchArgument(name=_name, choices=filtered_choices)
+
 test_xacro_laser = define_xacro_test(
     xacro_file_path, arm_standalone, SEAArmArgs.wrist_model)
 test_xacro_laser = define_xacro_test(
@@ -61,4 +69,4 @@ test_xacro_laser = define_xacro_test(
 test_xacro_laser = define_xacro_test(
     xacro_file_path, tiago_sea, straigh_wrist)
 test_xacro_laser = define_xacro_test(
-    xacro_file_path, arm_args, SEAArmArgs.wrist_model)
+    xacro_file_path, arm_args, SEAArmArgs.wrist_model, end_effector)
