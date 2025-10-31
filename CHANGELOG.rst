@@ -15,6 +15,17 @@ Changelog for package pal_sea_arm_controller_configuration
 * Restructure launch files
 * Contributors: David ter Kuile, Noel Jimenez, davidterkuile
 
+1.21.0 (2025-10-29)
+-------------------
+* Merge branch 'tpe/add_open_loop' into 'humble-devel'
+  Add back openloop to controller
+  See merge request robots/pal_sea_arm!99
+* Add back openloop to controller
+* Contributors: thomas.peyrucain, thomaspeyrucain
+
+1.20.2 (2025-10-29)
+-------------------
+
 1.20.1 (2025-10-27)
 -------------------
 
